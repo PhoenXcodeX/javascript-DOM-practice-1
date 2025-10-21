@@ -9,9 +9,12 @@ but this was the error: unidentified
 =====
 
 Hey Lindsey, good news!  The code that you are pasting into the console is actually working... 
-1. Reload and try running this again: document.querySelector("h1").classList.add("huge");
-2. Then right click on the red 'Hello' at the top of the page and select 'inspect'...  That will open the DOM inspector.  You should see something that looks like this:
-<h1 class="huge">Hello</h1>
+
+Reload and try running this again: document.querySelector("h1").classList.add("huge");
+
+Then right click on the red 'Hello' at the top of the page and select 'inspect'...  That will open the DOM inspector.  You should see something that looks like this:
+
+< h1 class="huge">Hello</ h1 >
 
 The class "huge" wasn't there before, which means that Javascript added it dynamically, so your code is working!  The 'undefined' that you are seeing isn't an error...  When you do something like .querySelector, .add, etc, you are calling 'methods' on javascript 'objects'.  All methods return something...  It could be a string, or a number, or sometimes it's 'nothing', which is why you are seeing 'undefined' (because those methods don't return anything.)
 
